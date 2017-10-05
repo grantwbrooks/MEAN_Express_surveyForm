@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Survey Form Result</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+<body>
+    <div>
+        <h3>Submitted Information</h3>
+        <h4>Name: <%= userResult.yourname %></h4>
+        <h4>Dojo Location: <%= userResult.location %></h4>
+        <h4>Favorite Language: <%= userResult.language %></h4>
+        <h4>Comment: <%= userResult.comment %></h4>
+        <form action='/back' method='post'>
+            <input type='submit' value='Take Me Back'>
+        </form>
+    </div>
+    
+</body>
+</html>
